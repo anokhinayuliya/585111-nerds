@@ -49,7 +49,7 @@
 				<img src="img/laptop.png" width="" height="" alt="Ноутбук">
 				<h3>Веб-сайты</h3>	
 				<p>Мир никогда не будет прежним<br>
-				после тго как увидит ваш сайт!</p>
+				после того как увидит ваш сайт!</p>
 				<a class="btn btn-red" href="Web-sites.html">Заказать</a>
 			</div>
 			<div class="services-item">
@@ -143,10 +143,24 @@
 		<b>Давайте дружить, это выгодно!</b>
 		<span>Скидка 10% для друзей из социальных сетей.</span>
 	</footer>
-	<section class="modal write-us">
-      <h2>Напишите нам</h2>
-      <!-- Здесь будет форма -->
-      <span class="modal-close">x</span>
+	<section class="write-us">
+      	<h2>Напишите нам</h2>
+      	<form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
+      		<p class="write-us-item">
+        		<label for="write-us-name">Ваше имя:</label><br>
+        		<input id="write-us-name" type="text" name="name" placeholder="Имя Фамилия" required>
+      		</p>
+      		<p class="write-us-item">
+        		<label for="write-us-email">Ваш e-mail:</label><br>
+        		<input id="write-us-email" type="email" name="email" placeholder="email@example.com" required>
+      		</p>
+      		<p class="write-us-item">
+        		<label for="write-us-comment">Текст письма:</label><br>
+        		<textarea id="write-us-comment" name="comment" placeholder="В свободной форме" rows="4"></textarea>
+      		</p>
+      		<button class="button" type="submit">Отправить</button>
+     	</form>
+      	<button class="modal-close" type="button">Закрыть</button>
     </section>
 </body>
 </html>

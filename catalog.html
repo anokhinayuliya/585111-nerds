@@ -3,6 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<title>Магазин дизайн-студии Nerd's</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 	<header class="main-header">
@@ -35,12 +37,12 @@
 	<main class="container">
 		<section class="filters">
         	<h2 class="visually-hidden">Фильтр товаров</h2>
-        	<b class="filter">Стоимость:</b>
-        	<div>
-        		<span></span>
-        		<span></span>
+        	<b class="filter1">Стоимость:</b>
+        	<div class="range">
+        		<span class="range-slider"></span>
+        		<span class="range-slider"></span>
         	</div>
-        	<p>
+        	<p class="value">
         		<label>
         			От
         			<input type="number" name="amount" min="0" max="20000">
@@ -99,7 +101,7 @@
       	<section class="catalog">
         	<h2 class="visually-hidden">Список готовых шаблонов</h2>
         	<div class="sorting">
-        		<b class="filter">Сортировать:</b>
+        		<b class="filter1">Сортировать:</b>
         		<ul class="sorting-list">
         			<li class="sorting-item">
         				<a href="#">по цене</a>
@@ -127,7 +129,7 @@
         			</div>
         			<img src="img/img-sedona.jpg" width="" height="" alt="Шаблон сайта Sedona">
         			<div class="hover">
-        				<a href="#">Sedona</a>
+        				<a class="name" href="#">Sedona</a>
         				<p>Информационный сайт<br> 
         				для туристов</p>
         				<a class="btn" href="#">9 900 руб.</a>
@@ -141,7 +143,7 @@
         			</div>
         			<img src="img/img-pink.jpg" width="" height="" alt="Шаблон сайта Pink App">
         			<div class="hover">
-        				<a href="#">Pink App</a>
+        				<a class="name" href="#">Pink App</a>
         				<p>Продуктовый лендинг<br>
         				приложения для iOS и Android</p>
         				<a class="btn" href="#">9 900 руб.</a>
@@ -155,7 +157,7 @@
         			</div>
         			<img src="img/img-barbershop.jpg" width="" height="" alt="Шаблон сайта Barbershop">
         			<div class="hover">
-        				<a href="#">Pink App</a>
+        				<a class="name" href="#">Pink App</a>
         				<p>Сайт салоны красоты.<br>
         				Для мужчин,да.</p>
         				<a class="btn" href="#">9 900 руб.</a>
@@ -169,7 +171,7 @@
         			</div>
         			<img src="img/img-mishka.jpg" width="" height="" alt="Шаблон сайта Mishka">
         			<div class="hover">
-        				<a href="#">Mishka</a>
+        				<a class="name" href="#">Mishka</a>
         				<p>Интернет-магазин<br>
         				вязаных игрушек</p>
         				<a class="btn" href="#">9 900 руб.</a>
@@ -183,7 +185,7 @@
         			</div>
         			<img src="img/img-aplus.jpg" width="" height="" alt="Шаблон сайта A Plus">
         			<div class="hover">
-        				<a href="#">A Plus</a>
+        				<a class="name" href="#">A Plus</a>
         				<p>Лендинг курсов повышения<br>
         				квалификации</p>
         				<a class="btn" href="#">9 900 руб.</a>
@@ -197,7 +199,7 @@
         			</div>
         			<img src="img/img-kvast.jpg" width="" height="" alt="Шаблон сайта Кваст">
         			<div class="hover">
-        				<a href="#">Кваст</a>
+        				<a class="name" href="#">Кваст</a>
         				<p>Промо-сайт производителя<br>
         				крафтового кваса</p>
         				<a class="btn" href="#">9 900 руб.</a>
@@ -232,7 +234,7 @@
 			</div>
 		</div>
 		<div class="footer-social">
-			<ul>
+			<ul class="social-item">
           		<li><a class="social-button" href="#">Вконтакте</a></li>
           		<li><a class="social-button" href="#">Фейсбук</a></li>
           		<li><a class="social-button" href="#">Инстаграм</a></li>
@@ -256,7 +258,7 @@
         		<label for="write-us-comment">Текст письма:</label><br>
         		<textarea id="write-us-comment" name="comment" placeholder="В свободной форме" rows="4"></textarea>
       		</p>
-      		<button class="button" type="submit">Отправить</button>
+      		<button class="btn" type="submit">Отправить</button>
       	</form>
       	<button class="modal-close" type="button">Закрыть</button>
     </section>

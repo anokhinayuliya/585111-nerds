@@ -37,11 +37,16 @@ input[type="radio"].visually-hidden {
 	background-color: #eeeeee;
 }
 
+.main-header2 {
+	padding-bottom: 102px;
+}
+
 .main-centre {
 	width: 1160px;
 	margin: 0 auto;
 	padding: 0 20px;
 }
+
 
 .main-navigation {
 	display: flex;
@@ -279,8 +284,6 @@ input[type="radio"].visually-hidden {
 
 
 .page-title {
-	margin-bottom: 102px;
-	
 	font-size: 55px;
 	line-height: 55px;
 	font-weight: 500;
@@ -501,6 +504,10 @@ input[type="radio"].visually-hidden {
 	margin-right: 22px;
   	padding: 0;
 	list-style: none;
+}
+
+.social-item li {
+	overflow: hidden;
 }
 
 .footer-inscription {
